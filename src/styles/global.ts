@@ -1,17 +1,19 @@
 import { createGlobalStyle } from 'styled-components'
 
+
 export const GlobalStyle = createGlobalStyle`
   /* Definido Variáveis no CSS */
   :root{
     --header: #f7f7f7;
     --background: #ffff;
-    --red:#C2121F;
+    --red:#ea1d2c;
     --green: #b6d048;
     --yellow-beer:#F6D553;
     --purple:#8c60c5;
     --pink-light:#f9879c; 
     --text-title: #000;
     --text-body: #f7f7f7;  
+
 
   }
   *{
@@ -40,6 +42,9 @@ export const GlobalStyle = createGlobalStyle`
   }
   h1, h2, h3, h4, h5, h6, strong{
     font-weight: 600;
+  }
+  a{
+    text-decoration: none
   }
   button{
     cursor: pointer;
