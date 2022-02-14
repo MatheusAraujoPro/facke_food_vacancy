@@ -1,6 +1,7 @@
+import { Card } from "../Card";
 import { Input } from "../Input";
 import { SigninButton } from "../SigninButton";
-import { Container, SearchPanel } from "./styles";
+import { Container, SearchPanel, Cards } from "./styles";
 
 export function MainContent() {
   const onChange = () => {};
@@ -13,6 +14,10 @@ export function MainContent() {
         <Input onChange={onChange} />
         <SigninButton title="Buscar" />
       </SearchPanel>
+      <Cards>
+        <Card title="Restaurante" type="restaurant" />
+        <Card title="Mercado" type="supermarket" />
+      </Cards>
     </Container>
   );
 }

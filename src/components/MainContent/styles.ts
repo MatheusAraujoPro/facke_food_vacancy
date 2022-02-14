@@ -33,3 +33,12 @@ export const SearchPanel = styled.section`
   }
 `
 
+export const Cards = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8rem;
+  width: 52rem;
+  /* border: 1px solid red; */
+`
+
