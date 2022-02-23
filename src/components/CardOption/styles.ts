@@ -19,8 +19,12 @@ export const Container = styled.div<CardProps>`
   justify-content: center;  
   flex-direction: column;
   padding-top: 1.5rem;
+  transition: transform .3s;
+  cursor: pointer;
 
- 
+  &:hover{
+    transform: scale(1.05)
+  } 
 
   .image_content{ 
     position: relative ;
