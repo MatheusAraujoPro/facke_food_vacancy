@@ -37,8 +37,15 @@ export const Cards = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 8rem;
+  margin-top: 6rem;
   width: 52rem;
-  /* border: 1px solid red; */
+  
 `
+
+export const Options = styled.div`
+ /* border: 1px solid red; */
+ width: 52rem; 
+ margin-top: 5rem;
+ display: flex;
+`;
 

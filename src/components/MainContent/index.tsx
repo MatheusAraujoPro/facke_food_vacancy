@@ -1,7 +1,8 @@
 import { Card } from "../Card";
+import { CardOption } from "../CardOption";
 import { Input } from "../Input";
 import { SigninButton } from "../SigninButton";
-import { Container, SearchPanel, Cards } from "./styles";
+import { Container, SearchPanel, Cards, Options } from "./styles";
 
 export function MainContent() {
   const onChange = () => {};
@@ -18,6 +19,9 @@ export function MainContent() {
         <Card title="Restaurante" type="restaurant" />
         <Card title="Mercado" type="supermarket" />
       </Cards>
+      <Options>
+        <CardOption title="Bebidas" type="drinks" />
+      </Options>
     </Container>
   );
 }

@@ -21,7 +21,7 @@ export const Container = styled.div<ButtonProps>`
  padding: 1rem;
  border-radius: 0.5rem;
  background: ${props => props.type === 'restaurant'
- ? darken(0.1, '#ea1d2c'):darken(0.1, '#b6d048')};
+ ? darken(0.1, type.restaurant):darken(0.1, type.supermarket)};
  color: var(--background);
  font-weight: bold;
 

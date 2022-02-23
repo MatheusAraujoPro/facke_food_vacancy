@@ -9,14 +9,15 @@ export const Container = styled.div`
     background: var(--background);
     align-items: center;
     padding: 0.8rem;
+    border-radius: 0.5rem 0  0 0.5rem  ;
   }
 
   input{    
     border: 0;
     width: 40rem;
-    padding-left: 0.5rem;
+    padding-left: 0.5rem ;
     font-size: 1.1rem;
-    border-radius: 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0 ;
   
     /* Zerando o estilo padrão do navegador */
     &:focus{
