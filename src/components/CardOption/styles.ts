@@ -4,9 +4,16 @@ interface CardProps{
   type: "drinks" | "pharmacy" | "express" | "petshop";
 }
 
+const typeColor = {
+  drinks: '#F6D553',
+  pharmacy: '#f9879c',
+  express: '#ea1d2c',
+  petshop: '#8c60c5'
+}
+
 export const Container = styled.div<CardProps>`
   height: 6rem;
-  width: 10rem;
+  width: 11rem;
   display: flex;
   align-items: center ;
   justify-content: center;  
@@ -19,16 +26,19 @@ export const Container = styled.div<CardProps>`
     position: relative ;
     height: 60%;
     width: 100%;
-    background-color: var(--yellow-beer);
+    background-color: ${props => props.type  === 'drinks'
+    ? typeColor.drinks : props => props.type === 'express'
+    ? typeColor.express: props => props.type === 'petshop'
+    ? typeColor.petshop: typeColor.pharmacy };
     display: flex ;
     justify-content: center;
     align-items: flex-end ;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
 
     img{
       position: relative;
       z-index: 5;
-      height: 7rem;
+      height: 6rem; 
     }  
   }  
 

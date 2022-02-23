@@ -47,5 +47,14 @@ export const Options = styled.div`
  width: 52rem; 
  margin-top: 5rem;
  display: flex;
+ justify-content: space-between;
+
+ // Selecionar a última div da lista 
+ div:nth-of-type(4n){
+   img{
+     height: 5rem;
+   }
+ } 
+ 
 `;
 

@@ -21,6 +21,9 @@ export function MainContent() {
       </Cards>
       <Options>
         <CardOption title="Bebidas" type="drinks" />
+        <CardOption title="Farmácia" type="pharmacy" />
+        <CardOption title="Express" type="express" />
+        <CardOption title="Pet shop" type="petshop" />
       </Options>
     </Container>
   );
